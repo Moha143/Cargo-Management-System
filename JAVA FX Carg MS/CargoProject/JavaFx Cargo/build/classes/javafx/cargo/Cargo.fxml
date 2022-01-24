@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="424.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.cargo.CargoController">
+   <children>
+      <TitledPane animated="false" layoutX="-3.0" prefHeight="456.0" prefWidth="659.0" style="-fx-background-color: #128322df;" text="Cargo  Registration" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="605.0">
+               <children>
+                  <Pane layoutX="22.0" layoutY="14.0" prefHeight="202.0" prefWidth="287.0" style="-fx-background-color: #00FFFF;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="84.0" text="ID" />
+                        <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="92.0" text="Name" />
+                        <Label layoutX="14.0" layoutY="99.0" prefHeight="17.0" prefWidth="84.0" text="Item" />
+                        <Label layoutX="12.0" layoutY="132.0" prefHeight="17.0" prefWidth="84.0" text="KG" />
+                        <TextField id="txtid" fx:id="txtid" layoutX="104.0" layoutY="25.0" onKeyReleased="#cargoid" promptText="Enter Cargo ID" />
+                        <TextField id="txtname" fx:id="txtname" layoutX="104.0" layoutY="63.0" promptText="Enter Cargo Name" />
+                        <TextField id="txtitem" fx:id="txtitem" layoutX="104.0" layoutY="96.0" onKeyReleased="#cargoit" promptText="Enter Number of items" />
+                        <TextField id="txtkg" fx:id="txtkg" layoutX="104.0" layoutY="129.0" onKeyReleased="#cargokg" promptText="Enter number of Kg" />
+                        <Separator layoutX="281.0" layoutY="-16.0" orientation="VERTICAL" prefHeight="200.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="317.0" layoutY="15.0" prefHeight="200.0" prefWidth="266.0" style="-fx-background-color: #00FF00;">
+                     <children>
+                        <Button id="btnupdate" fx:id="btnUpdate" layoutX="133.0" layoutY="46.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Update">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button id="btndelete" layoutX="27.0" layoutY="128.0" mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnclose" layoutX="139.0" layoutY="127.0" mnemonicParsing="false" onAction="#clear" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Clear">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnsave" fx:id="btnsave" layoutX="27.0" layoutY="46.0" mnemonicParsing="false" onAction="#insert" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Save">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ScrollPane layoutX="9.0" layoutY="271.0" prefHeight="132.0" prefWidth="642.0">
+                     <content>
+                                  
+                                 </content>
+                     <content>
+                        <TableView fx:id="table" onMouseClicked="#mouseDataFilling" prefHeight="146.0" prefWidth="630.0">
+                          <columns>
+                            <TableColumn fx:id="CID" prefWidth="75.0" text="ID" />
+                            <TableColumn fx:id="CName" prefWidth="136.0" text="Name" />
+                              <TableColumn fx:id="CItem" prefWidth="95.0" text="Item" />
+                              <TableColumn fx:id="Ckg" prefWidth="160.0" text="Kg" />
+                              <TableColumn fx:id="cpay" prefWidth="161.0" text="Payment" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

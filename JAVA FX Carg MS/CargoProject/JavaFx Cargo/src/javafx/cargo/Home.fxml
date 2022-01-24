@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.cargo.HomeController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="131.0" style="-fx-background-color: #142428;">
+         <children>
+            <Label prefHeight="57.0" prefWidth="134.0" text="    Home Page" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button id="hcust" fx:id="oncustomer" mnemonicParsing="false" onMouseClicked="#Customer" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Customer" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="hcust" fx:id="onemployee" mnemonicParsing="false" onMouseClicked="#Employee" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Employee" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="hcust" fx:id="oncargo" mnemonicParsing="false" onMouseClicked="#Cargo" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Cargo" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="hcust" fx:id="onship" mnemonicParsing="false" onMouseClicked="#Ship" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Ship" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="hcust" fx:id="onport" mnemonicParsing="false" onMouseClicked="#Port" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Port" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button id="hcust" fx:id="onshipment" mnemonicParsing="false" onMouseClicked="#Shipment" prefHeight="65.0" prefWidth="132.0" style="-fx-background-color: transparent;" text="Shipment" textFill="#fafffb">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Text fill="#dd0202" layoutX="144.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cargo Management System(CMS)" textAlignment="CENTER" wrappingWidth="446.13671875">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.cargo.ShipmentController">
+   <children>
+      <TitledPane animated="false" layoutX="-3.0" layoutY="-1.0" prefHeight="463.0" prefWidth="607.0" text="Shipment  Registration">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="605.0">
+               <children>
+                  <Pane layoutX="22.0" layoutY="14.0" prefHeight="202.0" prefWidth="287.0" style="-fx-background-color: #00FFFF;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="84.0" text="ID" />
+                        <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="92.0" text="Source" />
+                        <Label layoutX="14.0" layoutY="99.0" prefHeight="17.0" prefWidth="84.0" text="Item" />
+                        <TextField id="txtid" fx:id="txtid" layoutX="104.0" layoutY="25.0" promptText="Enter Shipment ID" />
+                        <TextField id="txtname" fx:id="txtsource" layoutX="104.0" layoutY="63.0" promptText="Enter Porrt Source" />
+                        <TextField id="txtitem" fx:id="txtdest" layoutX="104.0" layoutY="100.0" promptText="Enter Destination" />
+                        <Separator layoutX="281.0" layoutY="-16.0" orientation="VERTICAL" prefHeight="200.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="317.0" layoutY="15.0" prefHeight="200.0" prefWidth="266.0" style="-fx-background-color: #00FF00;">
+                     <children>
+                        <Button id="btnupdate" fx:id="btnUpdate" layoutX="133.0" layoutY="46.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Update">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button id="btndelete" layoutX="27.0" layoutY="128.0" mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnclose" layoutX="139.0" layoutY="127.0" mnemonicParsing="false" onAction="#clear" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Clear">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnsave" fx:id="btnsave" layoutX="27.0" layoutY="46.0" mnemonicParsing="false" onAction="#insert" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Save">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <ScrollPane layoutX="14.0" layoutY="231.0" prefHeight="187.0" prefWidth="577.0">
+                     <content>
+                        <TableView fx:id="table" onMouseClicked="#mouseDataFilling" prefHeight="174.0" prefWidth="584.0">
+                           <columns>
+                              <TableColumn fx:id="CID" prefWidth="75.0" text="ID" />
+                              <TableColumn fx:id="CSource" prefWidth="239.0" text="Port Source" />
+                              <TableColumn fx:id="CIDes" prefWidth="253.0" text="Port Destination" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

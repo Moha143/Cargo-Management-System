@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafx.cargo.NavsController">
+   <children>
+      <AnchorPane prefHeight="402.0" prefWidth="122.0">
+         <children>
+            <VBox layoutY="-4.0" prefHeight="406.0" prefWidth="136.0" style="-fx-background-color: #142428;" />
+            <Button fx:id="nav" blendMode="LIGHTEN" layoutX="-4.0" layoutY="2.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Navigation Bar" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="customer" blendMode="LIGHTEN" layoutX="-5.0" layoutY="51.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Customer" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cargo" blendMode="LIGHTEN" layoutX="23.0" layoutY="86.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="88.0" style="-fx-background-color: transparent;" text="Cargo" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="employee" blendMode="LIGHTEN" layoutX="-6.0" layoutY="124.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Employee" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="shipment" blendMode="LIGHTEN" layoutX="-6.0" layoutY="158.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Shipment" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ship" blendMode="LIGHTEN" layoutX="-3.0" layoutY="195.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Ship" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="port" blendMode="LIGHTEN" layoutX="-2.0" layoutY="235.0" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="136.0" style="-fx-background-color: transparent;" text="Port" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="pane" layoutX="133.0" prefHeight="400.0" prefWidth="468.0" />
+   </children>
+</AnchorPane>

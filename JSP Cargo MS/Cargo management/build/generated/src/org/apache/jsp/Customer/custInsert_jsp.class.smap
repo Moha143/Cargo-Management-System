@@ -1,0 +1,14 @@
+SMAP
+custInsert_jsp.java
+JSP
+*S JSP
+*F
++ 0 custInsert.jsp
+Customer/custInsert.jsp
+*L
+1,3:45
+5,23:49
+27,5:72
+32,2:78
+33,99:80
+*E

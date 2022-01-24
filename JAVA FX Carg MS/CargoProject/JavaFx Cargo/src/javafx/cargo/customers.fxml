@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.cargo.CustomerController">
+   <children>
+      <TitledPane animated="false" layoutX="-3.0" layoutY="-28.0" prefHeight="456.0" prefWidth="601.0" text="Customer Registration">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="605.0">
+               <children>
+                  <Pane layoutX="22.0" layoutY="14.0" prefHeight="202.0" prefWidth="287.0" style="-fx-background-color: #00FFFF;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="84.0" text="ID" />
+                        <Label layoutX="14.0" layoutY="67.0" prefHeight="17.0" prefWidth="92.0" text="Name" />
+                        <Label layoutX="14.0" layoutY="99.0" prefHeight="17.0" prefWidth="84.0" text="Phone" />
+                        <Label layoutX="12.0" layoutY="132.0" prefHeight="17.0" prefWidth="84.0" text="Address" />
+                        <Label layoutX="11.0" layoutY="167.0" prefHeight="17.0" prefWidth="84.0" text="Gender" />
+                        <TextField id="txtid" fx:id="txtcustid" layoutX="104.0" layoutY="25.0" onKeyReleased="#id" promptText="Enter Customer ID" />
+                        <TextField id="txtname" fx:id="txtcustname" layoutX="104.0" layoutY="63.0" promptText="Enter Customer Name" />
+                        <TextField id="txtphone" fx:id="txtcustphone" layoutX="104.0" layoutY="96.0" onKeyReleased="#phone" promptText="Enter Customer Number" />
+                        <TextField id="txtaddress" fx:id="txtcustaddress" layoutX="104.0" layoutY="129.0" promptText="Enter Customer Address" />
+                        <TextField id="txtgender" fx:id="txtcustgender" layoutX="104.0" layoutY="165.0" promptText="Enter Gender type" />
+                        <Separator layoutX="281.0" layoutY="-16.0" orientation="VERTICAL" prefHeight="200.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="325.0" layoutY="15.0" prefHeight="200.0" prefWidth="266.0" style="-fx-background-color: #00FF00;">
+                     <children>
+                        <Button id="btnupdate" fx:id="btnupdate" layoutX="127.0" layoutY="46.0" mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Update">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button id="btndelete" fx:id="btndelete" layoutX="27.0" layoutY="128.0" mnemonicParsing="false" onAction="#delete" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Delete">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnclose" fx:id="btnclose" layoutX="133.0" layoutY="127.0" mnemonicParsing="false" onAction="#clear" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="CLear">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button id="btnsave" fx:id="btnsave" layoutX="27.0" layoutY="46.0" mnemonicParsing="false" onAction="#insert" prefHeight="38.0" prefWidth="89.0" style="-fx-background-color: #6495ED;" text="Save">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <TitledPane animated="false" layoutX="22.0" layoutY="226.0" prefHeight="206.0" prefWidth="585.0" text="Display ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane layoutX="14.0" layoutY="-10.0" prefHeight="200.0" prefWidth="576.0">
+                                 <content>
+                                    <TableView fx:id="table" onMouseClicked="#mouseDataFilling" prefHeight="181.0" prefWidth="556.0">
+                                      <columns>
+                                        <TableColumn fx:id="cID" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="CName" prefWidth="162.0" text="Name" />
+                                          <TableColumn fx:id="CTell" prefWidth="98.0" text="Phone" />
+                                          <TableColumn fx:id="CAddress" prefWidth="90.0" text="Address" />
+                                          <TableColumn fx:id="CGender" prefWidth="130.0" text="Gender" />
+                                      </columns>
+                                    </TableView>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>

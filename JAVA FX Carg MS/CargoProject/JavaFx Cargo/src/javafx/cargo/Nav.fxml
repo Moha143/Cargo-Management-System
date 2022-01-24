@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.cargo.NavController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="131.0" style="-fx-background-color: #142428;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="nav" blendMode="LIGHTEN" lineSpacing="3.0" mnemonicParsing="false" onMouseClicked="#nav" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Navigation Bar" textAlignment="CENTER" textFill="#fffdfd" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="oncustomer" mnemonicParsing="false" onMouseClicked="#Customer" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Customer" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="onemployee" mnemonicParsing="false" onMouseClicked="#Employee" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Employee" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="oncargo" mnemonicParsing="false" onMouseClicked="#Cargo" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="cargo" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="onship" mnemonicParsing="false" onMouseClicked="#Ship" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Ship" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="onshipment" mnemonicParsing="false" onMouseClicked="#Shipment" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Shipment" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="onport" mnemonicParsing="false" onMouseClicked="#Port" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: transparent;" text="Port" textFill="#fefff7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="BASELINE_CENTER" />
+   </center>
+</BorderPane>
